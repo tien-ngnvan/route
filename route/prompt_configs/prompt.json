@@ -1,0 +1,39 @@
+[
+    {
+      "state": "CHAT",
+      "definition": "The CHAT state is responsible for maintaining an ongoing conversation with the user. It is designed for casual, continuous dialogue, and the system should focus on engagement and context retention.",
+      "micro_instructions": [
+        "Greet the user and establish a conversational tone.",
+        "Ask open-ended questions to foster engagement.",
+        "Acknowledge user input to maintain flow (e.g., 'Got it!', 'Interesting!').",
+        "Track previous context in the session for continuity in conversation.",
+        "Ensure responses are conversational and friendly, not too formal or robotic.",
+        "Avoid abrupt topic shifts unless necessary, keeping the conversation on track."
+      ]
+    },
+    {
+      "state": "QuestionAnswering",
+      "definition": "The QuestionAnswering state is focused on responding to a user query with a clear, accurate, and concise answer. It’s used when the user asks specific, direct questions that require factual or informational responses.",
+      "micro_instructions": [
+        "Identify the key intent of the user’s question (e.g., is it asking for a fact, opinion, or explanation?).",
+        "Retrieve or generate the most relevant information to answer the question.",
+        "Provide a clear and concise answer, ensuring correctness and relevance.",
+        "If the question is complex, break the answer into smaller parts for easier understanding (e.g., bullet points or numbered lists).",
+        "Ensure the answer is straightforward and doesn’t include unnecessary details.",
+        "End with a prompt for follow-up questions or further clarification."
+      ]
+    },
+    {
+      "state": "Reasoning",
+      "definition": "The Reasoning state is used to explain a process, decision, or complex concept. It requires logical, step-by-step explanations and might involve reasoning through a problem or concept to help the user understand a conclusion.",
+      "micro_instructions": [
+        "Identify key components or steps that need to be explained to the user.",
+        "Structure the reasoning into logical steps or stages, ensuring clarity.",
+        "Use clear, simple language to explain each part of the reasoning process.",
+        "Provide evidence, examples, or analogies to support the explanation.",
+        "Summarize the conclusion after the reasoning process is complete.",
+        "Invite the user to ask further questions or request more details if needed."
+      ]
+    }
+  ]
+  
